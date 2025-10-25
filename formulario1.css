@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightgreen;
+    color: black;
+}
+
+header{
+    background-color: green;
+    padding: auto;
+    position: sticky;
+}
+
+.top-bar{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+}
+
+.marca{
+    grid-column: 1 / 2;
+    text-align: left;
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 30px;
+}
+
+.cont{
+    grid-column: 3 / 4;
+}
+
+.comentartios{
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar{
+    padding: 0.5rem;
+    border: 1px solid gray;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 20%;
+}
+
+.steam{
+    background-color: lightblue;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(8, 211, 8);
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.formulario{
+    grid-column: 1 / 2;
+    grid-row: wrap;
+}
+
+label{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, textarea{
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}

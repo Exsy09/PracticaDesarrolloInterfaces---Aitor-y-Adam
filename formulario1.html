@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADATOR</title>
+    <link rel="stylesheet" href="formulario1.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <h1 class="marca">ADATOR</h1>
+            <div class="cont">
+                <button class="comentarios">Comentarios</button>
+                <input type="text" placeholder="Buscar..." class="search-bar" />
+                <button class="steam">Instalar Steam</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <form class="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                
+                <label for="apellidos">apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+
+                <label for="Reseñas">Comentarios/Reseñas</label>
+                <textarea id="reseña" name="reseña" placeholder="Comentarios..." rows="6" required>
+            </form>
+
+            <div class="terminos">
+                <p class="info">
+                    Para poder dejar un comentario debe respetar el equipo personal y garantizar el cumplimiento de seguridad y protección de la empresa correspondiente.
+                </p>
+                
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    Al hacer clic aquí, declaro que he leído y aceptado los términos y condiciones.
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    Al hacer clic aquí, acepto que mis comentarios no contienen contenido ofensivo, violento o sexual.
+                </label>
+
+                <div class="botones">
+                    <button type="reset" class="cancel">Cancelar</button>
+                    <button type="submit" class="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" class="community-link">ÚNETE A LA COMUNIDAD</a>
+        <p class="copyright">Copyright © 2025 - All rights reserved.</p>
+    </footer>
+</body>
+</html>
