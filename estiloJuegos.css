@@ -78,15 +78,6 @@
       overflow-y: auto;
     }
 
-    body {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE y Edge antiguos */
-    }
-
-    body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-    }
-
     .categoria {
       font-weight: bold;
       font-size: large;
