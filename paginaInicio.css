@@ -75,8 +75,11 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      overflow-y: auto;
+      overflow-y: scroll;
+      overflow-x: hidden;
     }
+
+    ::-webkit-scrollbar {display: none;}
 
     .categoria {
       font-weight: bold;
@@ -130,6 +133,30 @@
 
     .imagenes-row img:hover {
         transform: scale(1.05);   
+    }
+
+    a {
+        font-size: large;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+    }
+
+    p {
+        font-size: xx-large;
+        font-weight: bold;
+        grid-area: main;
+    }
+
+    .categoria {
+        font-size: larger;
+        font-weight: bold;
+        margin: 10px;
+        padding: 5px;
+        width: 250px;
+        text-align: left;
+        border-radius: 5px;
+        border: solid grey 1px;
     }
 
     @media (max-width: 900px) {
