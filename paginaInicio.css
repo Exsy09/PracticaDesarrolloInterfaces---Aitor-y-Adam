@@ -5,10 +5,10 @@
     }
 
     html, body {
-      height: 100%;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-      background-color: lightgreen;
-      color: black;
+        height: 100%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        background-color: lightgreen;
+        color: black;
     }
 
     img{
@@ -20,46 +20,55 @@
     }
 
     .grid-container {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      grid-template-rows: auto 1fr auto;
-      grid-template-areas:
-        "header header"
-        "aside main"
-        "footer footer";
-      height: 100vh;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "footer footer";
+        height: 100vh;
     }
 
     header {
-      grid-area: header;
-      background-color: #2f6f2f;
-      color: white;
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+        grid-area: header;
+        background-color: #2f6f2f;
+        color: white;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .marca {
-      font-size: 2rem;
+        font-size: 2rem;
+        margin-left: 30px;
     }
 
     .cont {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+        margin-left: 1100px; /*Tecnicamente...*/
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .top-bar {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        align-items: center;
     }
 
     .comentarios {
-      padding: 6px 12px;
-      border-radius: 5px;
-      border: 1px solid rgba(0,0,0,0.2);
-      background: white;
-      cursor: pointer;
-      font-size: medium;
+        padding: 6px 12px;
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.2);
+        background: white;
+        cursor: pointer;
+        font-size: medium;
     }
 
     .steam { 
+        display: inline-block;
         background-color: lightblue; 
         padding: 4px 10px;
         border-radius: 5px;
@@ -68,57 +77,57 @@
     }
 
     .search-bar {
-      padding: 7px;
-      border: 1px solid gray;
-      border-radius: 5px;
-      min-width: 180px;
+        padding: 7px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        min-width: 180px;
     }
 
     aside {
-      grid-area: aside;
-      background-color: greenyellow;
-      padding: 12px;
-      border-right: 3px solid #2f6f2f;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      overflow-y: scroll;
-      overflow-x: hidden;
+        grid-area: aside;
+        background-color: greenyellow;
+        padding: 12px;
+        border-right: 3px solid #2f6f2f;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     ::-webkit-scrollbar {display: none;}
 
     .categoria {
-      font-weight: bold;
-      font-size: large;
-      margin: 10px 0 4px;
-      padding: 6px;
-      background-color: #efefef;
-      border-radius: 4px;
-      border: 1px solid gray;
+        font-weight: bold;
+        font-size: large;
+        margin: 10px 0 4px;
+        padding: 6px;
+        background-color: #efefef;
+        border-radius: 4px;
+        border: 1px solid gray;
     }
 
     a.link {
-      text-decoration: none;
-      color: black;
-      font-size: medium;
-      margin-left: 8px;
-      margin-bottom: 5px;
-      display: block;
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+        margin-left: 8px;
+        margin-bottom: 5px;
+        display: block;
     }
 
     main {
-      grid-area: main;
-      padding: 16px;
-      overflow-y: auto;
-      background-color: #b7ffb7;
+        grid-area: main;
+        padding: 16px;
+        overflow-y: auto;
+        background-color: #b7ffb7;
     }
 
     .generos p {
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin: 20px 0 10px;
-      color: #083a08;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 20px 0 10px;
+        color: #083a08;
     }
 
     .imagenes-row {
@@ -138,7 +147,7 @@
         transition: transform 0.2s ease;
     }
 
-    .imagenes-row img:hover {
+    img:hover {
         transform: scale(1.05);   
     }
 
@@ -181,19 +190,19 @@
     }
 
     footer {
-      grid-area: footer;
-      background-color: #2f6f2f;
-      color: white;
-      text-align: center;
-      padding: 20px;
+        grid-area: footer;
+        background-color: #2f6f2f;
+        color: white;
+        text-align: center;
+        padding: 20px;
     }
 
     .community-link {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 6px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
     }
 
     @media (max-width: 900px) {
