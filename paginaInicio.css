@@ -50,18 +50,25 @@
       gap: 10px;
     }
 
-    .comentarios, .steam {
+    .comentarios {
       padding: 6px 12px;
       border-radius: 5px;
       border: 1px solid rgba(0,0,0,0.2);
       background: white;
       cursor: pointer;
+      font-size: medium;
     }
 
-    .steam { background-color: lightblue; }
+    .steam { 
+        background-color: lightblue; 
+        padding: 4px 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
 
     .search-bar {
-      padding: 6px;
+      padding: 7px;
       border: 1px solid gray;
       border-radius: 5px;
       min-width: 180px;
