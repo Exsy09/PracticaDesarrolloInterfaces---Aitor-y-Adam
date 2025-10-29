@@ -30,32 +30,41 @@
         height: 100vh;
     }
 
-    header {
+   header {
         grid-area: header;
         background-color: #2f6f2f;
         color: white;
         padding: 10px 16px;
+    }
+
+    .top-bar {
         display: flex;
+        width: 100%;      
         align-items: center;
-        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .marca {
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    .cont {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;    
+        align-items: center;
+    }
+
+    .search-bar {
+        min-width: 180px;
+        max-width: 320px;        
+        box-sizing: border-box;
     }
 
     .marca {
         font-size: 2rem;
         margin-left: 30px;
-    }
-
-    .cont {
-        margin-left: 1100px; /*Tecnicamente...*/
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .top-bar {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        align-items: center;
     }
 
     .comentarios {
