@@ -101,7 +101,7 @@
 
     aside {
         grid-area: aside;
-        background-color: greenyellow;
+        background-color: rgb(94, 177, 91);
         padding: 12px;
         border-right: 3px solid #2f6f2f;
         display: flex;
