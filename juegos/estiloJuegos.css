@@ -17,6 +17,12 @@
         margin-right: 10px;
         margin-left: 10px;
         border-radius: 10px;
+        position: absolute;
+        top: 460px;
+    }
+
+    .fondo {
+        width: 100%;
     }
 
     .grid-container {
@@ -155,11 +161,11 @@
         grid-area: main;
         overflow-y: auto;
         background-color: #b7ffb7;
+        position: relative;
     }
 
     h2 {
-      display: flex;
-      
+      left: 100px;
     }
 
     @media (max-width: 900px) {
