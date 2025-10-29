@@ -172,6 +172,10 @@
         font-weight: bold;
         grid-area: main;
     }
+    
+    .copyright{
+        font-size: initial;
+    }
 
     .categoria {
         font-size: larger;

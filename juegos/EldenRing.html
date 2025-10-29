@@ -1,86 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADATOR</title>
-    <link rel="stylesheet" href="estiloJuegos.css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ADATOR</title>
+        <link rel="stylesheet" href="estiloJuegos.css" />
+    </head>
 
-<body>
-    <div class="grid-container">
-        <header>
-                <div class="top-bar">
-                    <h1 class="marca"><a href="../paginaPrincipal/paginaInicio.html" class="main-link">ADATOR</a></h1>
-                    <div class="cont">
-                        <button class="comentarios" onclick="window.location.href='../formulario/formulario1.html'">Comentarios</button>
-                        <input type="text" placeholder="Buscar..." class="search-bar" />
-                        <button class="steam"><a href="https://store.steampowered.com/about" class="main-link">Instalar Steam</a></button>
+    <body>
+        <div class="grid-container">
+            <header>
+                    <div class="top-bar">
+                        <h1 class="marca"><a href="../paginaPrincipal/paginaInicio.html" class="main-link">ADATOR</a></h1>
+                        <div class="cont">
+                            <button class="comentarios" onclick="window.location.href='../formulario/formulario1.html'">Comentarios</button>
+                            <input type="text" placeholder="Buscar..." class="search-bar" />
+                            <button class="steam"><a href="https://store.steampowered.com/about" class="main-link">Instalar Steam</a></button>
+                        </div>
+                    </div>
+            </header>
+            <aside>
+                <button class="categoria">Metroidvanias</button></br>
+                <a href="../juegos/HollowKnight.html" class="link">Hollow Knight</a></br>
+                <a href="../juegos/Ori.html" class="link">Ori & The Will of the Wisps</a></br>
+                <a href="../juegos/Blasphemous.html" class="link">Blasphemous 2</a></br>
+                <button class="categoria">Roguelikes</button></br>
+                <a href="../juegos/Hades.html" class="link">Hades</a></br>
+                <a href="../juegos/DeadCells.html" class="link">Dead Cells</a></br>
+                <a href="../juegos/CultoftheLamb.html" class="link">Cult of the Lamb</a></br>
+                <button class="categoria">Aventura</button></br>
+                <a href="../juegos/BG3.html" class="link">Baldur's Gate 3</a></br>
+                <a href="../juegos/RDR2.html" class="link">Red Dead Redemption 2</a></br>
+                <a href="../juegos/GoWRagnarok.html" class="link">God of War Ragnarok</a></br>
+                <button class="categoria">Soulslike</button></br>
+                <a href="../juegos/EldenRing.html" class="link">Elden Ring</a></br>
+                <a href="../juegos/Sekiro.html" class="link">Sekiro: Shadows Die Twice</a></br>
+                <a href="../juegos/DeathsDoor.html" class="link">Death's Door</a></br>
+                <button class="categoria">Simulación</button></br>
+                <a href="../juegos/StardewValley.html" class="link">Stardew Valley</a></br>
+                <a href="../juegos/Forza.html" class="link">Forza Horizon 5</a></br>
+                <a href="../juegos/JWEvolution.html" class="link">Jurassic World Evolution 3</a></br>
+                <button class="categoria">FPS</button></br>
+                <a href="../juegos/Battlefield.html" class="link">Battlefield 6</a></br>
+                <a href="../juegos/Ultrakill.html" class="link">Ultrakill</a></br>
+                <a href="../juegos/CS2.html" class="link">Counter Strike 2</a></br>
+            </aside>
+            <main>
+                <img class="fondo" src="../IMG/fondos/ERFondo.jpg" alt="EldenRingFondo">
+
+                <div class="info-juego">
+                    <img class="portada" src="../IMG/EldenRing.jpg" alt="EldenRing">
+                    <div class="texto-juego">
+                        <h2>Elden Ring</h2>
+                        <p>Un RPG de acción en mundo abierto creado por FromSoftware, donde los jugadores exploran Las Tierras Intermedias en busca del Círculo de Elden.</p>
                     </div>
                 </div>
-        </header>
-        <aside>
-            <button class="categoria">Metroidvanias</button></br>
-            <a href="../juegos/HollowKnight.html" class="link">Hollow Knight</a></br>
-            <a href="../juegos/Ori.html" class="link">Ori & The Will of the Wisps</a></br>
-            <a href="../juegos/Blasphemous.html" class="link">Blasphemous 2</a></br>
-            <button class="categoria">Roguelikes</button></br>
-            <a href="../juegos/Hades.html" class="link">Hades</a></br>
-            <a href="../juegos/DeadCells.html" class="link">Dead Cells</a></br>
-            <a href="../juegos/CultoftheLamb.html" class="link">Cult of the Lamb</a></br>
-            <button class="categoria">Aventura</button></br>
-            <a href="../juegos/BG3.html" class="link">Baldur's Gate 3</a></br>
-            <a href="../juegos/RDR2.html" class="link">Red Dead Redemption 2</a></br>
-            <a href="../juegos/GoWRagnarok.html" class="link">God of War Ragnarok</a></br>
-            <button class="categoria">Soulslike</button></br>
-            <a href="../juegos/EldenRing.html" class="link">Elden Ring</a></br>
-            <a href="../juegos/Sekiro.html" class="link">Sekiro: Shadows Die Twice</a></br>
-            <a href="../juegos/DeathsDoor.html" class="link">Death's Door</a></br>
-            <button class="categoria">Simulación</button></br>
-            <a href="../juegos/StardewValley.html" class="link">Stardew Valley</a></br>
-            <a href="../juegos/Forza.html" class="link">Forza Horizon 5</a></br>
-            <a href="../juegos/JWEvolution.html" class="link">Jurassic World Evolution 3</a></br>
-            <button class="categoria">FPS</button></br>
-            <a href="../juegos/Battlefield.html" class="link">Battlefield 6</a></br>
-            <a href="../juegos/Ultrakill.html" class="link">Ultrakill</a></br>
-            <a href="../juegos/CS2.html" class="link">Counter Strike 2</a></br>
-        </aside>
-        <main>
-            <img class="fondo" src="../IMG/fondos/ERFondo.jpg" alt="EldenRingFondo">
 
-            <div class="info-juego">
-                <img class="portada" src="../IMG/EldenRing.jpg" alt="EldenRing">
-                <div class="texto-juego">
-                    <h2>Elden Ring</h2>
-                    <p>Un RPG de acción en mundo abierto creado por FromSoftware, donde los jugadores exploran Las Tierras Intermedias en busca del Círculo de Elden.</p>
+                <div class="bloque-info">
+                    <h3>System Requirements</h3>
+                    <p>SO: Windows 10</br>
+                        Procesador: Intel i5-8400 / Ryzen 3 3300X</br>
+                        Memoria: 12 GB RAM</br>
+                        Gráficos: GTX 1060 / RX 580</br>
+                        Almacenamiento: 60 GB</p>
                 </div>
-            </div>
 
-            <div class="bloque-info">
-                <h3>System Requirements</h3>
-                <p>SO: Windows 10</br>
-                    Procesador: Intel i5-8400 / Ryzen 3 3300X</br>
-                    Memoria: 12 GB RAM</br>
-                    Gráficos: GTX 1060 / RX 580</br>
-                    Almacenamiento: 60 GB</p>
-            </div>
+                <div class="bloque-info">
+                    <h4>Features</h4>
+                    <p>Mundo abierto masivo y orgánico.</br>
+                        Combate desafiante al estilo Souls.</br>
+                        Cooperativo y PvP online.</br>
+                        Historia escrita por George R. R. Martin.</p>
+                </div>
 
-            <div class="bloque-info">
-                <h4>Features</h4>
-                <p>Mundo abierto masivo y orgánico.</br>
-                    Combate desafiante al estilo Souls.</br>
-                    Cooperativo y PvP online.</br>
-                    Historia escrita por George R. R. Martin.</p>
-            </div>
+                <div class="bloque-info">
+                    <h5>Reseñas</h5>
+                    <p><b>@TarnishedSoul: </b>“Es un universo en sí mismo. Te pierdes, mueres, aprendes y vuelves más fuerte. FromSoftware superó todas las expectativas. Pura libertad y sufrimiento glorioso.”</p>
+                </div>
+            </main>
+            <footer>
+                <a href="https://discord.gg/YRG8GMNw" class="community-link">ÚNETE A LA COMUNIDAD</a>
+                <p class="copyright">Copyright © 2025 - All rights reserved.</p>
+            </footer>
+        </div>
+        <script>
+            function filtrarCategorias() {
+                const input = document.querySelector('.search-bar');
+                const filtro = input.value.toLowerCase();
+                const categorias = document.querySelectorAll('aside .categoria');
 
-            <div class="bloque-info">
-                <h5>Reseñas</h5>
-                <p><b>@TarnishedSoul: </b>“Es un universo en sí mismo. Te pierdes, mueres, aprendes y vuelves más fuerte. FromSoftware superó todas las expectativas. Pura libertad y sufrimiento glorioso.”</p>
-            </div>
-        </main>
-        <footer>
-            <a href="https://discord.gg/YRG8GMNw" class="community-link">ÚNETE A LA COMUNIDAD</a>
-            <p class="copyright">Copyright © 2025 - All rights reserved.</p>
-        </footer>
-    </div>
-</body>
+                for (let i = 0; i < categorias.length; i++) {
+                    let categoria = categorias[i].innerText.toLowerCase();
+                    let sibling = categorias[i].nextElementSibling;
+
+                    let mostrar = categoria.includes(filtro) || filtro === '';
+
+                    while (sibling && !sibling.classList.contains('categoria')) {
+                        if (sibling.tagName.toLowerCase() === 'a') {
+                            sibling.style.display = mostrar ? '' : 'none';
+                        }
+                        sibling = sibling.nextElementSibling;
+                    }
+
+                    categorias[i].style.display = mostrar ? '' : 'none';
+                }
+            }
+
+            function inicializarBusqueda() {
+                const input = document.querySelector('.search-bar');
+                input.addEventListener('input', filtrarCategorias);
+            }
+
+            window.onload = inicializarBusqueda;
+        </script>
+    </body>
+</html>

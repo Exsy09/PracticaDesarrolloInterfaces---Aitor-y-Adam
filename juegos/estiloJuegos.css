@@ -144,6 +144,11 @@
         grid-area: main;
     }
 
+    .copyright{
+        font-size: initial;
+        font-weight: bold;
+    }
+
     .categoria {
         font-size: larger;
         font-weight: bold;
@@ -155,7 +160,7 @@
         border: solid grey 1px;
     }
 
-     main {
+    main {
         grid-area: main;
         overflow-y: auto;
         background-color: #b7ffb7;
@@ -170,7 +175,7 @@
 
     main .info-juego {
     display: flex;
-    align-items: flex-start; /* mantiene el título alineado con la parte superior de la imagen */
+    align-items: flex-start;
     gap: 30px;
     margin-top: 30px;
     }
@@ -187,8 +192,8 @@
     }
 
     main .texto-juego p {
-        font-size: 1rem; /* tamaño normal */
-        font-weight: normal; /* quitar el bold global */
+        font-size: 1rem;
+        font-weight: normal;
         line-height: 1.4;
         margin-top: 8px;
     }

@@ -13,7 +13,7 @@
             <div class="top-bar">
                 <h1 class="marca"><a href="../paginaPrincipal/paginaInicio.html" class="main-link">ADATOR</a></h1>
                 <div class="cont">
-                    <button class="steam"><a href="https://store.steampowered.com/about" class="main-link">Instalar Steam</a></button>
+                    <button class="steam"><a href="https://store.steampowered.com/about" class="steam-link">Instalar Steam</a></button>
                 </div>
             </div>
         </header>
@@ -21,7 +21,7 @@
         <main class="container">
             <div class="contenedor">
                 <h2 class="titulo">Comentarios:</h2>
-                <form class="formulario">
+                <form class="formulario" id="miFormulario">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
 
@@ -41,12 +41,12 @@
                     </p>
 
                     <label class="checkbox-label">
-                        <input type="checkbox" required>
+                        <input type="checkbox" class="checkbox" required>
                         <p class="texto"><b>He leído y aceptado los términos y condiciones.</b></p>
                     </label>
 
                     <label class="checkbox-label">
-                        <input type="checkbox">
+                        <input type="checkbox" class="checkbox">
                         <p class="texto"><b>Acepto recibir contenido relacionado con la página.</b></p>
                     </label>
 
@@ -63,5 +63,42 @@
             <p class="copyright">Copyright © 2025 - All rights reserved.</p>
         </footer>
     </div>
+    
+    <script>
+
+        function borrarCampos() {
+            const campos = document.querySelectorAll('#miFormulario input, #miFormulario textarea');
+            for (let i = 0; i < campos.length; i++) {
+                if (campos[i].type === 'checkbox') {
+                    campos[i].checked = false;
+                } else {
+                    campos[i].value = '';
+                }
+            }
+        }
+
+        function enviarFormulario() {
+            const primerCheckbox = document.querySelectorAll('.checkbox')[0];
+            
+            if (primerCheckbox.checked) {
+                alert('Comentario enviado');
+                window.location.href='../paginaPrincipal/paginaInicio.html'
+                borrarCampos();
+            } else {
+                alert('Debe aceptar los términos y condiciones antes de enviar.');
+            }
+        }
+
+        function inicializarEventos() {
+            const botonCancelar = document.querySelector('.cancel');
+            botonCancelar.addEventListener('click', borrarCampos);
+
+            const botonEnviar = document.querySelector('.submit');
+            botonEnviar.addEventListener('click', enviarFormulario);
+        }
+ 
+        window.onload = inicializarEventos;
+
+    </script>
 </body>
 </html>
