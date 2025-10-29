@@ -17,6 +17,7 @@
         margin-right: 10px;
         margin-left: 10px;
         border-radius: 10px;
+        transition: 1s;
     }
 
     .grid-container {
@@ -74,6 +75,7 @@
         background: white;
         cursor: pointer;
         font-size: medium;
+        transition: 1s;
     }
 
     .steam { 
@@ -83,6 +85,11 @@
         border-radius: 5px;
         border: 1px solid rgba(0,0,0,0.2);
         cursor: pointer;
+        transition: 1s;
+    }
+
+    .comentarios:hover, .steam:hover{
+        scale: 1.1;
     }
 
     .search-bar {
@@ -188,20 +195,6 @@
         border: solid grey 1px;
     }
 
-    @media (max-width: 900px) {
-        .imagenes-row img {
-            width: 180px;
-            height: 110px;
-        }
-    }
-
-    @media (max-width: 550px) {
-        .imagenes-row img {
-            width: 100%;
-            height: 160px;
-        }
-    }
-
     footer {
         grid-area: footer;
         background-color: #2f6f2f;
@@ -216,6 +209,26 @@
         font-weight: bold;
         display: block;
         margin-bottom: 6px;
+        transition: 1s;
+    }
+
+    .community-link:hover{
+        transform: translatey(-3px);
+        scale: 1.5;
+    }
+
+    @media (max-width: 900px) {
+        .imagenes-row img {
+            width: 180px;
+            height: 110px;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .imagenes-row img {
+            width: 100%;
+            height: 160px;
+        }
     }
 
     @media (max-width: 900px) {

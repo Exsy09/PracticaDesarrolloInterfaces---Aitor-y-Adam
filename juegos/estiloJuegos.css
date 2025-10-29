@@ -18,6 +18,11 @@
         margin-left: 10px;
         border-radius: 10px;
         margin-top: -150px;
+        transition: 2s;
+    }
+
+    .portada:hover{
+        scale: 1.13;
     }
 
     .fondo {
@@ -81,6 +86,7 @@
         background: white;
         cursor: pointer;
         font-size: medium;
+        transition: 1s;
     }
 
     .steam { 
@@ -90,6 +96,11 @@
         border-radius: 5px;
         border: 1px solid rgba(0,0,0,0.2);
         cursor: pointer;
+        transition: 1s;
+    }
+
+    .comentarios:hover, .steam:hover{
+        scale: 1.1;
     }
 
     .search-bar {
@@ -214,7 +225,27 @@
         color: #2f6f2f;
     }
 
+    footer {
+        grid-area: footer;
+        background-color: #2f6f2f;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
 
+    .community-link {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
+        transition: 1s;
+    }
+
+    .community-link:hover{
+        transform: translatey(-3px);
+        scale: 1.5;
+    }
 
     @media (max-width: 900px) {
         .imagenes-row img {
@@ -230,21 +261,6 @@
         }
     }
 
-    footer {
-        grid-area: footer;
-        background-color: #2f6f2f;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .community-link {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        display: block;
-        margin-bottom: 6px;
-    }
 
     @media (max-width: 900px) {
       .grid-container {
