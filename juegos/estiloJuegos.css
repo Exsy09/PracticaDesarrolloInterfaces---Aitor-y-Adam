@@ -17,11 +17,11 @@
         margin-right: 10px;
         margin-left: 10px;
         border-radius: 10px;
-        position: absolute;
-        top: 460px;
+        margin-top: -150px;
     }
 
     .fondo {
+        max-height: 520px;
         width: 100%;
     }
 
@@ -73,7 +73,6 @@
       margin-left: 30px;
       color: white;
     }
-
 
     .comentarios {
         padding: 6px 12px;
@@ -164,10 +163,53 @@
         position: relative;
     }
 
-    h2 {
-      display: flex;
-      
+    main > div {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
     }
+
+    main .info-juego {
+    display: flex;
+    align-items: flex-start; /* mantiene el título alineado con la parte superior de la imagen */
+    gap: 30px;
+    margin-top: 30px;
+    }
+
+    main .texto-juego {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .texto-juego h2 {
+        margin: 0;
+        font-size: 2rem;
+        color: #2f6f2f;
+    }
+
+    main .texto-juego p {
+        font-size: 1rem; /* tamaño normal */
+        font-weight: normal; /* quitar el bold global */
+        line-height: 1.4;
+        margin-top: 8px;
+    }
+
+
+    main .bloque-info {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 15px 25px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    main .bloque-info h3,
+    main .bloque-info h4,
+    main .bloque-info h5 {
+        margin-bottom: 8px;
+        color: #2f6f2f;
+    }
+
+
 
     @media (max-width: 900px) {
         .imagenes-row img {
