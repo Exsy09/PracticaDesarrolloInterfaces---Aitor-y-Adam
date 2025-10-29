@@ -1,18 +1,15 @@
-/* Altura completa */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* Fuente y colores base */
 body {
     font-family: sans-serif;
     background-color: lightgreen;
     color: black;
 }
 
-/* Grid principal */
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -24,7 +21,6 @@ body {
     height: 100%;
 }
 
-/* Header sticky */
 header {
     grid-area: header;
     background-color: green;
@@ -69,13 +65,11 @@ header {
     max-width: 20%;
 }
 
-/* Main ocupa espacio disponible */
 .container {
     grid-area: main;
     background-color: rgb(8, 211, 8);
 }
 
-/* Contenedor de formulario */
 .contenedor {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -148,7 +142,6 @@ input[type="checkbox"] {
 .cancel { background-color: #ff6666; color: white; }
 .submit { background-color: #007bff; color: white; }
 
-/* Footer */
 footer {
     grid-area: footer;
     background-color: green;

@@ -17,8 +17,6 @@
         margin-right: 10px;
         margin-left: 10px;
         border-radius: 10px;
-        position: absolute;
-        top: 570px;
     }
 
     .grid-container {
@@ -39,7 +37,6 @@
         padding: 10px 16px;
     }
 
-    /* Contenedor interno que organiza marca + botones */
     .top-bar {
         display: flex;
         width: 100%;      
@@ -158,7 +155,6 @@
         grid-area: main;
         overflow-y: auto;
         background-color: #b7ffb7;
-        position: relative;
     }
 
     h2 {
